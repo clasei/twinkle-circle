@@ -1,0 +1,37 @@
+.circle {
+    width: 18vw;
+    height: 18vw;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    margin: 5px;
+    opacity: 0.2;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: inline-block;
+}
+
+.circle.pink {
+    background-color: #D870AD;
+}
+
+.circle.green {
+    background-color: #45B649;
+}
+
+.circle.blue {
+    background-color: #357ABD;
+}
+
+.circle.yellow {
+    background-color: #FFD700;
+}
+
+.circle:active {
+    transform: scale(0.9);
+}
+
+.circle.active {
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
