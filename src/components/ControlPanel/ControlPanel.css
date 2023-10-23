@@ -4,8 +4,8 @@
 
 .control-panel button {
     padding: 10px 30px;
-    margin: 10px 10px;
-    font-size: 13px;
+    margin-top: 25px;
+    font-size: 1em;
     font-weight: bold;
     cursor: pointer;
     border: 1px solid #555;
