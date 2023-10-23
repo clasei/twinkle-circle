@@ -11,7 +11,7 @@ function App() {
   const [playerSequence, setPlayerSequence] = useState([]);
   const [isGameActive, setIsGameActive] = useState(false);
 
-  const colors = ["red", "blue", "green", "yellow"];
+  const colors = ["pink", "blue", "green", "yellow"];
   const [activeCircle, setActiveCircle] = useState("");
 
   const generateRandomColor = () => {
@@ -30,9 +30,9 @@ function App() {
   const playSequence = async (sequence) => {
     for (let color of sequence) {
       setActiveCircle(color);
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      await new Promise(resolve => setTimeout(resolve, 700));
       setActiveCircle(null);
-      await new Promise(resolve => setTimeout(resolve, 500));
+      await new Promise(resolve => setTimeout(resolve, 250));
     }
   };
 
