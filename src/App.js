@@ -44,7 +44,7 @@ function App() {
 
     if (newPlayerSequence[newPlayerSequence.length - 1] !== gameSequence[newPlayerSequence.length - 1]) {
       setIsGameActive(false);
-      alert("try again");
+      alert("practice is the way, give it another go (:");
       return;
     }
 
