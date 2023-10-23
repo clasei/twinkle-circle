@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';import './App.css';
 import particlesConfig from './assets/particles';
+import particlesConfig from './assets/particles.js';
 import CircleContainer from './components/CircleContainer/CircleContainer';
 import ControlPanel from './components/ControlPanel/ControlPanel';
 
