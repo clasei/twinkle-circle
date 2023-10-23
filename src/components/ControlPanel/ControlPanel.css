@@ -4,7 +4,7 @@
 
 .control-panel button {
     padding: 10px 30px;
-    margin: 30px 10px;
+    margin: 25px 10px;
     font-size: 13px;
     font-weight: bold;
     cursor: pointer;
@@ -23,3 +23,10 @@
 .control-panel button:active {
     transform: scale(0.8);
 }
+
+@media only screen and (max-width: 768px) {
+  
+    .control-panel button {
+        margin-bottom: 50px;
+    }
+  }
