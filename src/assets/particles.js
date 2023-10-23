@@ -1,20 +1,22 @@
 const particlesConfig = {
     "particles": {
       "number": {
-        "value": 50,
+        "value": 30,
         "density": {
           "enable": true,
-          "value_area": 800
+          "value_area": 500
         }
       },
       "color": {
-        "value": "#f7f7f7"
+        "value": "#AAAAAA"
       },
       "shape": {
-        "type": "circle"
+        "type": "circle",
+        "opacity": 0.3,
+        "color": "#AAAAAA"
       },
       "opacity": {
-        "value": 0.1,
+        "value": 0.3,
         "random": true
       },
       "size": {
@@ -22,7 +24,9 @@ const particlesConfig = {
         "random": true
       },
       "line_linked": {
-        "enable": true
+        "enable": true,
+        "opacity": 0.3,
+        "color": "#AAAAAA"
       },
       "move": {
         "enable": true,
