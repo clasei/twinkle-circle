@@ -1,4 +1,4 @@
-{
+const particlesConfig = {
     "particles": {
       "number": {
         "value": 50,
@@ -30,5 +30,6 @@
       }
     },
     "retina_detect": true
-  }
-  
+};
+
+export default particlesConfig;

@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import './App.css';
+import React, { useEffect } from 'react';import './App.css';
+import particlesConfig from './assets/particles';
 import CircleContainer from './components/CircleContainer/CircleContainer';
 import ControlPanel from './components/ControlPanel/ControlPanel';
 
@@ -9,10 +9,8 @@ function App() {
   };
 
   useEffect(() => {
-        particlesJS.load('particles-js', './assets/particles.json', function() {
-            console.log('particles.js loaded - callback');
-        });
-    }, []);
+    window.particlesJS('particles-js', particlesConfig);
+}, []);
 
   return (
     <div className="App">
