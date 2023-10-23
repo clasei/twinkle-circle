@@ -1,6 +1,6 @@
 .header {
+    margin-bottom: 50px;
     width: 100%;
-    padding: 20px;
     text-align: center;
     background-color: none;
 }
@@ -9,15 +9,14 @@
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     letter-spacing: 3px;
     color: #FFF;
-    font-size: 1.6em;
-    opacity: 0.7; /* change to 0 to start with hidden letters */
+    font-size: 1.8em;
+    opacity: 0.7;
     display: inline-block;
 }
 
 @media only screen and (max-width: 768px) {
   
     .title {
-        margin-top: 25px;
-        letter-spacing: 2px;
+        margin-top: 50px;
     }
   }
