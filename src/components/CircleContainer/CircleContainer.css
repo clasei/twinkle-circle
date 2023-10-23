@@ -1,8 +1,8 @@
 .container {
     display: flex;
-    overflow: auto;
-    margin-top: 25px;
+    flex-wrap: wrap;
     justify-content: center;
+    margin-top: 25px;
     align-items: center;
     height: 100%;
     width: 100%;

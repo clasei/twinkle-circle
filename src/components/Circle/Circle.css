@@ -39,9 +39,9 @@
 @media only screen and (max-width: 768px) {
   
     .circle {
-      width: 10vw;
-      height: 10vw;
-      margin: 10px;
+      width: 7em;
+      height: 7em;
+      margin: 5px;
       flex: 1 50%;
     }
   
