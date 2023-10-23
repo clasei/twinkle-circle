@@ -4,8 +4,7 @@
 
 .control-panel button {
     padding: 10px 30px;
-    margin: 25px 10px;
-    margin-bottom: 50px;
+    margin: 10px 10px;
     font-size: 13px;
     font-weight: bold;
     cursor: pointer;
@@ -27,7 +26,7 @@
 
 @media only screen and (max-width: 768px) {
   
-    .control-panel button {
-    
+.control-panel button {
+    margin-bottom: 50px;    
     }
   }
