@@ -28,6 +28,9 @@ function App() {
   };
 
   const playSequence = async (sequence) => {
+
+    await new Promise(resolve => setTimeout(resolve, 1000));
+
     for (let color of sequence) {
       setActiveCircle(color);
       await new Promise(resolve => setTimeout(resolve, 700));
@@ -50,9 +53,11 @@ function App() {
 
     if (newPlayerSequence.length === gameSequence.length) {
       const newColor = generateRandomColor();
-      setGameSequence([...gameSequence, newColor]);
-      playSequence([...gameSequence, newColor]);
-      setPlayerSequence([]);
+      setTimeout(() => {
+        setGameSequence([...gameSequence, newColor]);
+        playSequence([...gameSequence, newColor]);
+        setPlayerSequence([]);
+      }, 500);
     }
   };
 

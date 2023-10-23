@@ -17,7 +17,6 @@
 
 .control-panel button:hover {
     background-color: #555;
-    transform: scale(0.9);
 }
 
 .control-panel button:active {
