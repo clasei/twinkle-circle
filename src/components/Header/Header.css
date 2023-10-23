@@ -7,6 +7,7 @@
 
 .title {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
     color: #FFF;
     font-size: 2em;
     opacity: 0.3; /* change to 0 to start with hidden letters */
@@ -16,6 +17,7 @@
 @media only screen and (max-width: 768px) {
   
     .title {
-        margin-top: 15px;
+        margin-top: 16px;
+        letter-spacing: 2px;
     }
   }
