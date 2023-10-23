@@ -8,25 +8,25 @@ const particlesConfig = {
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#f7f7f7"
       },
       "shape": {
         "type": "circle"
       },
       "opacity": {
-        "value": 0.5,
-        "random": false
+        "value": 0.1,
+        "random": true
       },
       "size": {
-        "value": 3,
+        "value": 2,
         "random": true
       },
       "line_linked": {
-        "enable": false
+        "enable": true
       },
       "move": {
         "enable": true,
-        "speed": 1
+        "speed": 0.7
       }
     },
     "retina_detect": true
