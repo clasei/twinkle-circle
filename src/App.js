@@ -17,6 +17,7 @@ function App() {
   return (
     <div className="App">
         <div id="particles-js"></div>
+        
         <CircleContainer />
         <ControlPanel onStart={startGame} />
     </div>
