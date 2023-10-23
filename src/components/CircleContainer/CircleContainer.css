@@ -1,5 +1,6 @@
 .container {
     display: flex;
+    overflow: auto;
     margin-top: 25px;
     justify-content: center;
     align-items: center;
