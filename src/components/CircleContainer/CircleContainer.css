@@ -1,6 +1,6 @@
 .container {
     display: flex;
-    margin-top: 10vw;
+    margin-top: 25px;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -9,3 +9,9 @@
     gap: 20px;
 }
 
+@media only screen and (max-width: 768px) {
+  
+    .container {
+        margin-top: 15px;
+    }
+  }

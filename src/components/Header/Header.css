@@ -1,0 +1,21 @@
+.header {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: none;
+}
+
+.title {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #FFF;
+    font-size: 2em;
+    opacity: 0.3; /* change to 0 to start with hidden letters */
+    display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+  
+    .title {
+        margin-top: 15px;
+    }
+  }
