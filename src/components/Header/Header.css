@@ -1,4 +1,5 @@
 .header {
+    margin-top: 50px;
     width: 100%;
     padding: 20px;
     text-align: center;
@@ -10,13 +11,13 @@
     letter-spacing: 3px;
     color: #FFF;
     font-size: 1.6em;
-    opacity: 0.7; /* change to 0 to start with hidden letters */
+    opacity: 0.7;
     display: inline-block;
 }
 
 @media only screen and (max-width: 768px) {
   
     .title {
-        margin-top: 30px;
+        margin-top: 15px;
     }
   }
