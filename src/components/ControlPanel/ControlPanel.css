@@ -4,6 +4,7 @@
 
 .control-panel button {
     padding: 10px 30px;
+    margin: 30px 10px;
     font-size: 13px;
     cursor: pointer;
     border: 1px solid #555;

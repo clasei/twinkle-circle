@@ -3,27 +3,44 @@ import './Header.css';
 
 const Header = () => {
     const titleText = 'twinkleCircle';
-    // Inicializamos el título mostrado con espacios
-    const [displayedTitle, setDisplayedTitle] = useState(new Array(titleText.length).fill(' ').join(''));
+
+    // Función para desordenar las letras
+    const shuffle = (str) => {
+        let arr = str.split('');
+        for (let i = arr.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+        return arr.join('');
+    }
+
+    // title starts disordered
+    const [displayedTitle, setDisplayedTitle] = useState(shuffle(titleText));
+
+    let alreadyPlacedIndices = new Set(); // check ok placed letters
 
     useEffect(() => {
         let letters = titleText.split('');
+        let shuffledTitle = displayedTitle.split('');
 
-        // array with the letters, random order
-        let indexes = Array.from({length: letters.length}, (_, i) => i);
-        indexes.sort(() => Math.random() - 0.5);
+        let alreadyPlacedIndices = new Set();  // Para rastrear las letras que ya se han colocado correctamente
 
-        indexes.forEach((index, i) => {
-            setTimeout(() => {
-                // Reemplazamos el espacio en el índice correspondiente con la letra
-                setDisplayedTitle(prev => {
-                    let chars = prev.split('');
-                    chars[index] = letters[index];
-                    return chars.join('');
-                });
-            }, i * 420); // interval ms
-        });
-    }, []);
+    letters.forEach((letter, i) => {
+        setTimeout(() => {
+            let availableIndices = shuffledTitle.map((el, idx) => (el === letter && !alreadyPlacedIndices.has(idx)) ? idx : -1).filter(idx => idx !== -1);
+            
+            if (availableIndices.length > 0) {
+                let indexInShuffled = availableIndices[0];
+                if (indexInShuffled !== i) {
+                    shuffledTitle[indexInShuffled] = shuffledTitle[i];
+                    shuffledTitle[i] = letter;
+                    setDisplayedTitle(shuffledTitle.join(''));
+                    alreadyPlacedIndices.add(i);
+                }
+            }
+        }, i * 500); // interval ms
+    });
+}, []);
 
     return (
         <div className="header">
@@ -33,4 +50,5 @@ const Header = () => {
 }
 
 export default Header;
+
 

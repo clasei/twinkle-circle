@@ -9,8 +9,8 @@
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     letter-spacing: 3px;
     color: #FFF;
-    font-size: 2em;
-    opacity: 0.3; /* change to 0 to start with hidden letters */
+    font-size: 1.6em;
+    opacity: 0.7; /* change to 0 to start with hidden letters */
     display: inline-block;
 }
 
