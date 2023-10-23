@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import particlesJS from 'particles.js';
 import './App.css';
 import CircleContainer from './components/CircleContainer/CircleContainer';
 import ControlPanel from './components/ControlPanel/ControlPanel';
