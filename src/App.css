@@ -4,7 +4,7 @@
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   text-align: center;
   padding: 40px;
-  background-color: #f4f4f4;
+  background-color: none;
   display: flex;
   flex-direction: column;
   align-items: center;
