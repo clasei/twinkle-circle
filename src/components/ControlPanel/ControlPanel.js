@@ -6,18 +6,18 @@ const ControlPanel = ({ onStart, gameSpeed, onSpeedChange }) => {
     <div className="control-panel">
       
       <button onClick={onStart}>play</button>
-      <p>watch & repeat — that's it</p>
-      <p><br></br>- adapt the speed -</p>
+      <p className="instruction">watch & repeat — that's it</p>
+      
       <input className="slider"
           type="range"
           min="100"
-          max="1300"
+          max="999"
           value={gameSpeed}
           onChange={onSpeedChange}
           id="speedSlider"
       />
       <span className="slider-metric">{gameSpeed}ms</span>
-      
+      <p className="speed-adaptation">- adapt the speed -</p>
     </div>
   );
 }
