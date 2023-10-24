@@ -33,7 +33,7 @@ footer span {
 
 #rocketIcon {
     margin-left: 0px;
-    margin-right: 1px;
+    margin-right: 7px;
 }
 
 
@@ -45,6 +45,7 @@ footer span {
 
     #footer {
         bottom: 0;
+        position: relative;
         border-radius: 15px;
     }
 }
