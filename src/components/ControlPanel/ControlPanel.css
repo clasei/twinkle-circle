@@ -28,6 +28,10 @@
     transform: scale(0.8);
 }
 
+.slider-metric {
+    font-size: 10px;
+}
+
 @media only screen and (max-width: 768px) {
   
 .control-panel {
