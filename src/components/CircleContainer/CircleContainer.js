@@ -21,5 +21,3 @@ const CircleContainer = ({ activeCircle, setActiveCircle, onCircleClick  }) => {
 }
 
 export default CircleContainer;
-
-

@@ -28,6 +28,7 @@ function App() {
   };
 
   const playSequence = async (sequence) => {
+    setActiveCircle("");
     await new Promise(resolve => setTimeout(resolve, 1000));
 
     for (let color of sequence) {

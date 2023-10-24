@@ -12,4 +12,3 @@ const Circle = ({ color, onClick, active }) => {
 }
 
 export default Circle;
-
