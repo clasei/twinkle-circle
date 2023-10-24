@@ -11,6 +11,8 @@ function App() {
   const [playerSequence, setPlayerSequence] = useState([]);
   const [isGameActive, setIsGameActive] = useState(false);
 
+  const [gameSpeed, setGameSpeed] = useState(700);
+
   const colors = ["pink", "blue", "green", "yellow"];
   const [activeCircle, setActiveCircle] = useState("");
 
@@ -18,6 +20,10 @@ function App() {
     const randomIndex = Math.floor(Math.random() * colors.length);
     return colors[randomIndex];
   };
+
+  const handleSpeedChange = (event) => {
+    setGameSpeed(event.target.value);
+  };  
 
   const startGame = () => {
     setIsGameActive(true);
@@ -33,7 +39,7 @@ function App() {
 
     for (let color of sequence) {
       setActiveCircle(color);
-      await new Promise(resolve => setTimeout(resolve, 700));
+      await new Promise(resolve => setTimeout(resolve, gameSpeed));
       setActiveCircle(null);
       await new Promise(resolve => setTimeout(resolve, 250));
     }
@@ -74,7 +80,7 @@ function App() {
             setActiveCircle={setActiveCircle}
             onCircleClick={handleCircleClick}
         />
-        <ControlPanel onStart={startGame} />
+        <ControlPanel onStart={startGame} gameSpeed={gameSpeed} onSpeedChange={handleSpeedChange} />
     </div>
  );
 }
