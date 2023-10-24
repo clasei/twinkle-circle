@@ -9,7 +9,7 @@ const Footer = () => {
         <footer>
             <span id="currentYear">{ currentYear } </span>
             // built by clara
-            <span id="rocketIcon">🚀</span>
+            <span id="rocketIcon"> 🚀 </span>
             pragmatic front-end developer <a href="https://github.com/clasei" target="_blank" rel="noopener noreferrer">→ clara seijo</a>
         </footer>
     </div>
