@@ -5,6 +5,7 @@ import particlesConfig from './assets/particles.js';
 import Header from './components/Header/Header';
 import CircleContainer from './components/CircleContainer/CircleContainer';
 import ControlPanel from './components/ControlPanel/ControlPanel';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [gameSequence, setGameSequence] = useState([]);
@@ -35,7 +36,7 @@ function App() {
 
   const playSequence = async (sequence) => {
     setActiveCircle("");
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    await new Promise(resolve => setTimeout(resolve, 850));
 
     for (let color of sequence) {
       setActiveCircle(color);
@@ -81,6 +82,7 @@ function App() {
             onCircleClick={handleCircleClick}
         />
         <ControlPanel onStart={startGame} gameSpeed={gameSpeed} onSpeedChange={handleSpeedChange} />
+        <Footer />
     </div>
  );
 }

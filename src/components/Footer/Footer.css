@@ -1,0 +1,51 @@
+#footer {
+    font-family: 'Roboto Mono', monospace;
+    color: rgba(194, 194, 194, 0.902);
+    font-size: 0.7em;
+    background-color: rgba(40, 40, 40, 0.7);
+    padding: 10px 5px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(125, 125, 125, 0.5);
+    box-sizing: border-box;
+    position: fixed;
+    width: 95%;
+    margin-bottom: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(94, 160, 255);
+    margin: 2px 3px;
+    transition: color 0.5s;
+}
+
+footer a:hover {
+    background-color: pink;
+    font-weight: bold;
+}
+
+footer span {
+    margin: 0 0;
+}
+
+#rocketIcon {
+    margin-left: 0px;
+    margin-right: 7px;
+}
+
+
+@media only screen and (max-width: 900px) {
+    body {
+        overflow-y: auto;
+        padding: 15px;    
+    }
+
+    #footer {
+        bottom: 0;
+        position: relative;
+        border-radius: 15px;
+    }
+}

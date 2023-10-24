@@ -24,3 +24,4 @@ Project is licensed under the Creative Commons License.
 ### License — [particles.js](https://github.com/VincentGarreau/particles.js)
 The library `particles.js` is under the MIT License.
 [MIT License](https://github.com/VincentGarreau/particles.js/blob/master/LICENSE.md) by [Vincent Garreau](https://github.com/VincentGarreau).
+
