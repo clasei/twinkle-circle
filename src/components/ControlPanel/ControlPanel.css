@@ -1,14 +1,14 @@
 .control-panel {
     margin: 10px 0;
-    font-size: 0.9em;
+    font-size: 0.85em;
     color: #bebebe94;
     text-align: center; 
 }
 
 .control-panel button {
     padding: 10px 30px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 25px;
+    margin-bottom: 5px;
     font-size: 1.1em;
     font-weight: bold;
     letter-spacing: 3px;
@@ -28,10 +28,21 @@
     transform: scale(0.8);
 }
 
+input[type="range"] {
+    filter: grayscale(100%);
+}
+
+.slider {
+    margin-top: 30px;
+    height: 5px;
+    cursor: pointer;
+}
+
 .slider-metric {
     font-size: 11px;
     padding: 0 5px;
 }
+
 
 @media only screen and (max-width: 768px) {
   
