@@ -1,5 +1,5 @@
 .control-panel {
-    margin: 20px 0;
+    margin: 10px 0;
     font-size: 0.9em;
     color: #bebebe94;
     text-align: center; 
@@ -8,6 +8,7 @@
 .control-panel button {
     padding: 10px 30px;
     margin-top: 10px;
+
     font-size: 1.1em;
     font-weight: bold;
     letter-spacing: 3px;
@@ -29,7 +30,7 @@
 
 @media only screen and (max-width: 768px) {
   
-.control-panel button {
-    margin-bottom: 50px;    
+.control-panel {
+    padding-bottom: 50px;    
     }
   }
