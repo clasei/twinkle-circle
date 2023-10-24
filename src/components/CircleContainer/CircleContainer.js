@@ -12,10 +12,14 @@ const CircleContainer = ({ activeCircle, setActiveCircle, onCircleClick  }) => {
 
     return (
         <div className="container">
-            <Circle color="pink" onClick={() => handleCircleClick("pink")} active={activeCircle === "pink"} />
-            <Circle color="green" onClick={() => handleCircleClick("green")} active={activeCircle === "green"} />
-            <Circle color="blue" onClick={() => handleCircleClick("blue")} active={activeCircle === "blue"} />
-            <Circle color="yellow" onClick={() => handleCircleClick("yellow")} active={activeCircle === "yellow"} />
+            <div className="row-1">
+                <Circle color="pink" onClick={() => handleCircleClick("pink")} active={activeCircle === "pink"} />
+                <Circle color="green" onClick={() => handleCircleClick("green")} active={activeCircle === "green"} />
+            </div>
+            <div className="row-2">
+                <Circle color="blue" onClick={() => handleCircleClick("blue")} active={activeCircle === "blue"} />
+                <Circle color="yellow" onClick={() => handleCircleClick("yellow")} active={activeCircle === "yellow"} />
+                </div>
         </div>
     );
 }
