@@ -10,6 +10,7 @@
     transition: all 0.2s;
     display: inline-block;
     box-sizing: border-box;
+    margin: 10px;
 }
 
 .circle.pink {
@@ -42,7 +43,6 @@
     .circle {
       width: 7em;
       height: 7em;
-      margin: 3px;
       flex: 1 50%;
     }
   }
