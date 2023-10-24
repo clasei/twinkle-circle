@@ -41,7 +41,7 @@ function App() {
       setActiveCircle(color);
       await new Promise(resolve => setTimeout(resolve, gameSpeed));
       setActiveCircle(null);
-      await new Promise(resolve => setTimeout(resolve, 250));
+      await new Promise(resolve => setTimeout(resolve, 200));
     }
   };
 

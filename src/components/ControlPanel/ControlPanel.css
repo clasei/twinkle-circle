@@ -7,8 +7,8 @@
 
 .control-panel button {
     padding: 10px 30px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 25px;
+    margin-bottom: 5px;
     font-size: 1.1em;
     font-weight: bold;
     letter-spacing: 3px;
@@ -26,6 +26,10 @@
 
 .control-panel button:active {
     transform: scale(0.8);
+}
+
+.slider {
+    margin-top: 5px;
 }
 
 .slider-metric {
