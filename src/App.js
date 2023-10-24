@@ -28,7 +28,6 @@ function App() {
   };
 
   const playSequence = async (sequence) => {
-
     await new Promise(resolve => setTimeout(resolve, 1000));
 
     for (let color of sequence) {

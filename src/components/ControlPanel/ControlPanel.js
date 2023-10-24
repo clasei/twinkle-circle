@@ -4,7 +4,8 @@ import './ControlPanel.css';
 const ControlPanel = ({ onStart }) => {
   return (
     <div className="control-panel">
-      <button onClick={onStart}>Play</button>
+      <p>watch & repeat — that's it</p>
+      <button onClick={onStart}>play</button>
     </div>
   );
 }
