@@ -12,6 +12,7 @@
     position: fixed;
     width: auto;
     margin-bottom: 5px;
+    border-radius: 13px;
 }
 
 footer a {
@@ -45,7 +46,5 @@ footer span {
     #footer {
         bottom: 0;
         position: relative;
-        margin: 5px;
-        border-radius: 15px;
-    }
+        margin: 5px;    }
 }
