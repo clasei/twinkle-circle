@@ -4,7 +4,7 @@ import './Header.css';
 const Header = () => {
     const titleText = 'twinkleCircle';
 
-    // Función para desordenar las letras
+    // disorder header letters
     const shuffle = (str) => {
         let arr = str.split('');
         for (let i = arr.length - 1; i > 0; i--) {
@@ -23,7 +23,7 @@ const Header = () => {
         let letters = titleText.split('');
         let shuffledTitle = displayedTitle.split('');
 
-        let alreadyPlacedIndices = new Set();  // Para rastrear las letras que ya se han colocado correctamente
+        let alreadyPlacedIndices = new Set();  // check letters right placed
 
     letters.forEach((letter, i) => {
         setTimeout(() => {
