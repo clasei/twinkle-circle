@@ -75,13 +75,15 @@ function App() {
   return (
     <div className="App">
         <div id="particles-js"></div>
-        <Header />
-        <CircleContainer 
-            activeCircle={activeCircle}
-            setActiveCircle={setActiveCircle}
-            onCircleClick={handleCircleClick}
-        />
-        <ControlPanel onStart={startGame} gameSpeed={gameSpeed} onSpeedChange={handleSpeedChange} />
+        <div className="Content" style={{ flex: 1 }}>
+          <Header />
+          <CircleContainer 
+              activeCircle={activeCircle}
+              setActiveCircle={setActiveCircle}
+              onCircleClick={handleCircleClick}
+          />
+          <ControlPanel onStart={startGame} gameSpeed={gameSpeed} onSpeedChange={handleSpeedChange} />
+          </div>
         <Footer />
     </div>
  );

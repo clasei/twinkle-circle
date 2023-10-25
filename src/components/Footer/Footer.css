@@ -44,7 +44,7 @@ footer span {
 
     #footer {
         bottom: 0;
-        position: sticky;
+        position: relative;
         margin: 5px;
         border-radius: 15px;
     }
