@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-y: auto; 
+  overflow-y: scroll; 
   -webkit-overflow-scrolling: touch;
   z-index: 0;
 }
