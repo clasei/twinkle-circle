@@ -2,10 +2,12 @@ import React from 'react';
 import './ControlPanel.css';
 
 const ControlPanel = ({ onStart, gameSpeed, onSpeedChange }) => {
+
   return (
     <div className="control-panel">
       
       <button onClick={onStart}>play</button>
+      
       <p className="instruction">watch & repeat — that's it</p>
       
       <input className="slider"
@@ -14,7 +16,8 @@ const ControlPanel = ({ onStart, gameSpeed, onSpeedChange }) => {
           max="999"
           value={gameSpeed}
           onChange={onSpeedChange}
-          id="speedSlider"
+          id="speedslider"
+          aria-label="Speed Control"
       />
       <span className="slider-metric">{gameSpeed}ms</span>
       <p className="speed-adaptation">- adapt the speed -</p>
