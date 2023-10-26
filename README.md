@@ -30,9 +30,7 @@ The game initializes with a random circle lighting up, signifying the start of t
 - **Circles**: changes can be made in `Circle.js`
 - **Slider**: changes can be made in `ControlPanel.js` 
 
-### Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
+**Create React App** — this project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
 ---
 
