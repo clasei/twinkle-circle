@@ -1,7 +1,9 @@
 # twinkle-circle
 a modern twist on a classic to test your own random access memory
 
-### Visit Live Site → [twinkleCircle](https://clasei.github.io/twinkle-circle/)
+## Visit → [twinkleCircle](https://clasei.github.io/twinkle-circle/)
+[<img src="./src/assets/twinkle-circle-screenshot-1.png" alt="twinkle-circle screenshot" width="500"/>](./src/assets/twinkle-circle-screenshot-1.png)
+
 
 ## How It Works
 The game initializes with a random circle lighting up, signifying the start of the sequence. As players progress, the sequence grows. To play, users should replicate the sequence by clicking on the circles in the correct order.
