@@ -8,7 +8,7 @@ body, html {
   height: 100vh;
   overflow: auto;
   z-index: -1;
-  position: relative;
+  position: static;
   -webkit-overflow-scrolling: touch;
   background: rgba(15, 15, 15, 0.7);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
