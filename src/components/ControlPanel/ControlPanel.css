@@ -21,10 +21,6 @@
     transition: all 0.3s;
 }
 
-.control-panel button:hover {
-    background-color: #555;
-}
-
 .control-panel button:active {
     transform: scale(0.8);
 }
