@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Header.css';
 
 const Header = () => {
@@ -16,11 +16,15 @@ const Header = () => {
 
     // title starts disordered
     const [displayedTitle, setDisplayedTitle] = useState(shuffle(titleText));
+    const displayedTitleRef = useRef(displayedTitle);
+
+    useEffect(() => {
+        displayedTitleRef.current = displayedTitle;
+    }, [displayedTitle]);
 
     useEffect(() => {
         let letters = titleText.split('');
-        let shuffledTitle = displayedTitle.split('');
-
+        let shuffledTitle = displayedTitleRef.current.split('');
         let alreadyPlacedIndices = new Set();  // check letters right placed
 
     letters.forEach((letter, i) => {
