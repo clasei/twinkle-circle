@@ -36,9 +36,3 @@
   position: relative;
 }
 
-@media only screen and (max-width: 768px) {
-  
-  .App {
-    height: 100%;
-  }
-}
