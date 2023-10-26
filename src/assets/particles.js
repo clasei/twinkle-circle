@@ -12,11 +12,11 @@ const particlesConfig = {
       },
       "shape": {
         "type": "circle",
-        "opacity": 0.7,
+        "opacity": 0.3,
         "color": "#939393"
       },
       "opacity": {
-        "value": 0.7,
+        "value": 0.3,
         "random": true
       },
       "size": {
@@ -25,7 +25,7 @@ const particlesConfig = {
       },
       "line_linked": {
         "enable": true,
-        "opacity": 0.7,
+        "opacity": 0.3,
         "color": "#939393"
       },
       "move": {
