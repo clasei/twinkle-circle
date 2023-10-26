@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/twinkle-circle/static/css/main.fa7d1b1f.css",
+    "main.css": "/twinkle-circle/static/css/main.9e8eacf9.css",
     "main.js": "/twinkle-circle/static/js/main.cd4463aa.js",
     "static/js/787.e1a2ed66.chunk.js": "/twinkle-circle/static/js/787.e1a2ed66.chunk.js",
     "index.html": "/twinkle-circle/index.html",
-    "main.fa7d1b1f.css.map": "/twinkle-circle/static/css/main.fa7d1b1f.css.map",
+    "main.9e8eacf9.css.map": "/twinkle-circle/static/css/main.9e8eacf9.css.map",
     "main.cd4463aa.js.map": "/twinkle-circle/static/js/main.cd4463aa.js.map",
     "787.e1a2ed66.chunk.js.map": "/twinkle-circle/static/js/787.e1a2ed66.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa7d1b1f.css",
+    "static/css/main.9e8eacf9.css",
     "static/js/main.cd4463aa.js"
   ]
 }
