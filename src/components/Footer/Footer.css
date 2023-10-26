@@ -1,7 +1,7 @@
 #footer {
     font-family: 'Roboto Mono', monospace;
     color: rgba(194, 194, 194, 0.902);
-    font-size: 11px;
+    font-size: 0.7rem;
     background-color: rgba(40, 40, 40, 0.7);
     box-shadow: 0 4px 6px rgba(125, 125, 125, 0.5);
     padding: 10px 30px;
@@ -37,10 +37,3 @@ footer span {
     margin-right: 1px;
 }
 
-
-@media only screen and (max-width: 768px) {
-    
-    #footer {
-    font-size: 10px;
-    }
-}
