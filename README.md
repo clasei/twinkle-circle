@@ -1,7 +1,7 @@
 # twinkle-circle
 a modern twist on a classic to test your own random access memory
 
-## Visit → [twinkleCircle](https://clasei.github.io/twinkle-circle/)
+## Have Fun → [twinkleCircle](https://clasei.github.io/twinkle-circle/)
 [<img src="./src/assets/twinkle-circle-screenshot-1.png" alt="twinkle-circle screenshot" width="500"/>](./src/assets/twinkle-circle-screenshot-1.png)
 
 
