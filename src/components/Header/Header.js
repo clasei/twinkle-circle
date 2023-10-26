@@ -17,8 +17,6 @@ const Header = () => {
     // title starts disordered
     const [displayedTitle, setDisplayedTitle] = useState(shuffle(titleText));
 
-    let alreadyPlacedIndices = new Set(); // check ok placed letters
-
     useEffect(() => {
         let letters = titleText.split('');
         let shuffledTitle = displayedTitle.split('');
