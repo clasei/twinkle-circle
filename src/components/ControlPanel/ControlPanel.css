@@ -3,7 +3,9 @@
     margin-bottom: 75px;
     font-size: 0.85em;
     color: #bebebe94;
-    text-align: center; 
+    text-align: center;
+    overflow-y: auto; 
+    -webkit-overflow-scrolling: touch;
 }
 
 .control-panel button {

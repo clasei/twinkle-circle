@@ -1,10 +1,10 @@
 const particlesConfig = {
     "particles": {
       "number": {
-        "value": 230,
+        "value": 730,
         "density": {
           "enable": true,
-          "value_area": 900
+          "value_area": 3000
         }
       },
       "color": {
@@ -20,7 +20,7 @@ const particlesConfig = {
         "random": true
       },
       "size": {
-        "value": 2.7,
+        "value": 2.4,
         "random": true
       },
       "line_linked": {
