@@ -16,7 +16,8 @@ const ControlPanel = ({ onStart, gameSpeed, onSpeedChange }) => {
           max="999"
           value={gameSpeed}
           onChange={onSpeedChange}
-          id="speedSlider"
+          id="speedslider"
+          aria-label="Speed Control"
       />
       <span className="slider-metric">{gameSpeed}ms</span>
       <p className="speed-adaptation">- adapt the speed -</p>

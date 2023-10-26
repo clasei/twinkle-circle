@@ -69,8 +69,8 @@ function App() {
   };
 
   useEffect(() => {
-    window.particlesJS('particles-js', particlesConfig);
-}, []);
+      window.particlesJS('particles-js', particlesConfig);
+  }, []);
 
   return (
     <div className="App">
