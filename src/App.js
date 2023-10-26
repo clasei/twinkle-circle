@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import 'particles.js';
 import particlesConfig from './assets/particles.js';
 import Header from './components/Header/Header';
 import CircleContainer from './components/CircleContainer/CircleContainer';
@@ -27,6 +26,7 @@ function App() {
   };  
 
   const startGame = () => {
+    console.log("Game has started!");
     setIsGameActive(true);
     setPlayerSequence([]);
     const newColor = generateRandomColor();
@@ -41,7 +41,7 @@ function App() {
     for (let color of sequence) {
       setActiveCircle(color);
       await new Promise(resolve => setTimeout(resolve, gameSpeed));
-      setActiveCircle(null);
+      setActiveCircle("");
       await new Promise(resolve => setTimeout(resolve, 250));
     }
   };
