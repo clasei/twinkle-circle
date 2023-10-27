@@ -3,11 +3,11 @@
     color: rgba(194, 194, 194, 0.902);
     font-size: 0.7rem;
     background-color: rgba(40, 40, 40, 0.7);
-    box-shadow: 0 4px 6px rgba(125, 125, 125, 0.5);
+    box-shadow: 0 3px 10px rgba(95, 95, 95, 0.5);
     padding: 10px 30px;
     width: 100%;
     width: auto;
-    margin-bottom: 5px;
+    margin: 5px;
     border-radius: 13px;
     text-align: center;
     box-sizing: border-box;

@@ -2,7 +2,7 @@
     margin: 10px 0;
     margin-bottom: 75px;
     font-size: 0.85em;
-    color: #bebebe94;
+    color: #e0e0e0;
     text-align: center;
     overflow-y: auto; 
     -webkit-overflow-scrolling: touch;
@@ -10,7 +10,7 @@
 
 .control-panel button {
     padding: 10px 30px;
-    margin-top: 25px;
+    margin-top: 10px;
     margin-bottom: 5px;
     font-size: 1.1em;
     font-weight: bold;
@@ -38,7 +38,8 @@ input[type="range"] {
 }
 
 .slider {
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-bottom: 5px;
     height: 5px;
     cursor: pointer;
 }

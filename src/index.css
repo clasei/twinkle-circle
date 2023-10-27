@@ -10,7 +10,7 @@ body, html {
   opacity: 0.9;
   position: relative;
   -webkit-overflow-scrolling: touch;
-  background-image: linear-gradient(0deg, #0d0d0d, #101010, #202020);
+  background-image: linear-gradient(0deg, #070707, #101010, #1c1c1c);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

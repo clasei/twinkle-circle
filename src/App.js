@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './App.css';
 import particlesConfig from './assets/particles.js';
 import Header from './components/Header/Header';
@@ -11,11 +11,11 @@ function App() {
   const [gameSequence, setGameSequence] = useState([]);
   const [playerSequence, setPlayerSequence] = useState([]);
   const [isGameActive, setIsGameActive] = useState(false);
-
   const [gameSpeed, setGameSpeed] = useState(500);
-
   const colors = ["pink", "blue", "green", "yellow"];
   const [activeCircle, setActiveCircle] = useState("");
+
+  const headerRef = useRef(null);
 
   const generateRandomColor = () => {
     const randomIndex = Math.floor(Math.random() * colors.length);
@@ -77,7 +77,7 @@ function App() {
     <div className="App">
         <div id="particles-js"></div>
         <div className="Content" style={{ flex: 1 }}>
-            <Header />
+            <Header ref={headerRef} />
             <CircleContainer 
                 activeCircle={activeCircle}
                 setActiveCircle={setActiveCircle}
@@ -85,7 +85,7 @@ function App() {
             />
             <ControlPanel onStart={startGame} gameSpeed={gameSpeed} onSpeedChange={handleSpeedChange} />
           </div>
-        <Info />
+          <Info headerRef={headerRef} />
         <Footer />
     </div>
  );

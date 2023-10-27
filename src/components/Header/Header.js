@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, forwardRef } from 'react';
 import './Header.css';
 
-const Header = () => {
+function Header(props, ref) {
     const titleText = 'twinkleCircle';
 
     // disorder header letters
@@ -45,12 +45,12 @@ const Header = () => {
 }, []);
 
     return (
-        <div className="header">
+        <div className="header" ref={ref}>
             <h1 className="title">{displayedTitle}</h1>
         </div>
     );
 }
 
-export default Header;
+export default forwardRef(Header);
 
 
