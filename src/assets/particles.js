@@ -8,15 +8,15 @@ const particlesConfig = {
         }
       },
       "color": {
-        "value": "#939393"
+        "value": "#D9D9D9"
       },
       "shape": {
         "type": "circle",
-        "opacity": 0.2,
-        "color": "#939393"
+        "opacity": 1,
+        "color": "#D9D9D9"
       },
       "opacity": {
-        "value": 0.2,
+        "value": 0.4,
         "random": true
       },
       "size": {
@@ -25,8 +25,8 @@ const particlesConfig = {
       },
       "line_linked": {
         "enable": true,
-        "opacity": 0.2,
-        "color": "#939393"
+        "opacity": 0.4,
+        "color": "#D9D9D9"
       },
       "move": {
         "enable": true,
