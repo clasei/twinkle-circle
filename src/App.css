@@ -44,4 +44,6 @@
 .Info {
   z-index: 3;
   width: auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }

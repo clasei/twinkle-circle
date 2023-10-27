@@ -12,6 +12,11 @@ function Info() {
       <p>Every sequence is a step towards mastering your mind.</p>
       <p>Engage, play, and elevate your cognitive skills.</p>
       <p>In a world filled with noise, find your focus.</p>
+
+      <button onClick={() => window.scrollTo(0, 0)} className="scroll-to-top-button">
+        to the game
+      </button>
+
       <p><strong>Press play. Dive in.</strong></p>
     </div>
   );
