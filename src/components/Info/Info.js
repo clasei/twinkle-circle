@@ -1,16 +1,28 @@
 import React from 'react';
 import './Info.css';
 
-function Info() {
+function Info({ headerRef }) {
+    const scrollToGame = () => {
+      if (headerRef && headerRef.current) {
+        headerRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
   return (
     <div className="info-container">
       <h2>Hack Your RAM</h2>
-      <p>Discover <strong>twinkleCircle</strong>. A classic reimagined to challenge your mind.</p>
-      <p>It's more than a game. It's a test for your brain's very own RAM.</p>
-      <p>Immerse yourself with the subtle flow of particles by <a href="https://vincentgarreau.com/particles.js/">Particles.js</a>, crafted to keep you in the zone.</p>
-      <p>Every sequence is a step towards mastering your mind. Engage, play, and elevate your cognitive game.</p>
+      <p>Discover <strong>twinkleCircle</strong>, a classic reimagined to challenge your mind.</p>
+      <p>It's more than a challenge.</p>
+      <p>It's a test for your brain's very own RAM.</p>
+      <p>Enjoy the subtle flow of <a href="https://vincentgarreau.com/particles.js/">Particles.js</a>, crafted to keep you in the zone.</p>
+      <p>Every sequence is a step towards mastering your mind.</p>
+      <p>Engage, play, and elevate your cognitive skills.</p>
       <p>In a world filled with noise, find your focus.</p>
-      <p>Are you up for the challenge?</p>
+
+      <button onClick={scrollToGame} className="scroll-to-top-button">
+        to the game
+      </button>
+
       <p><strong>Press play. Dive in.</strong></p>
     </div>
   );
