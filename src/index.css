@@ -7,11 +7,10 @@ body, html {
   width: 100%;
   height: 100vh;
   overflow: auto;
-  z-index: -1;
-  position: static;
+  opacity: 0.9;
+  position: relative;
   -webkit-overflow-scrolling: touch;
-  background-color: rgba(0, 0, 0, 0.42);
-  background-image: linear-gradient(45deg, #12121280, #2e2e2e80, #30303099, #4d4d4d99);
+  background-image: linear-gradient(0deg, #0d0d0d, #101010, #202020);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
