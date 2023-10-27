@@ -40,3 +40,8 @@
   z-index: 2;
   position: relative;
 }
+
+.Info {
+  z-index: 3;
+  width: 90%;
+}
