@@ -11,9 +11,7 @@ function App() {
   const [gameSequence, setGameSequence] = useState([]);
   const [playerSequence, setPlayerSequence] = useState([]);
   const [isGameActive, setIsGameActive] = useState(false);
-
   const [gameSpeed, setGameSpeed] = useState(500);
-
   const colors = ["pink", "blue", "green", "yellow"];
   const [activeCircle, setActiveCircle] = useState("");
 
