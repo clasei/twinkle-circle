@@ -1,7 +1,13 @@
 import React from 'react';
 import './Info.css';
 
-function Info() {
+function Info({ headerRef }) {
+    const scrollToGame = () => {
+      if (headerRef && headerRef.current) {
+        headerRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
   return (
     <div className="info-container">
       <h2>Hack Your RAM</h2>
@@ -13,7 +19,7 @@ function Info() {
       <p>Engage, play, and elevate your cognitive skills.</p>
       <p>In a world filled with noise, find your focus.</p>
 
-      <button onClick={() => window.scrollTo(0, 0)} className="scroll-to-top-button">
+      <button onClick={scrollToGame} className="scroll-to-top-button">
         to the game
       </button>
 
