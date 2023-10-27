@@ -4,6 +4,7 @@ import particlesConfig from './assets/particles.js';
 import Header from './components/Header/Header';
 import CircleContainer from './components/CircleContainer/CircleContainer';
 import ControlPanel from './components/ControlPanel/ControlPanel';
+import Info from './components/Info/Info';
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -84,6 +85,7 @@ function App() {
             />
             <ControlPanel onStart={startGame} gameSpeed={gameSpeed} onSpeedChange={handleSpeedChange} />
           </div>
+        <Info />
         <Footer />
     </div>
  );

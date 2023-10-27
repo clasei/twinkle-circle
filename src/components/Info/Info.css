@@ -1,0 +1,38 @@
+.info-container {
+    font-weight: 550;
+    line-height: 1.5em;
+    color: #ebebeb;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 75px;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(95, 95, 95, 0.5);
+}
+
+.info-container h2 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #ebebeb;
+}
+
+.info-container p {
+    font-size: 0.8em;
+    margin: 10px 0;
+}
+
+.info-container a {
+    color: rgb(172, 172, 172);
+    font-weight: 570;
+}
+
+@media only screen and (max-width: 768px) {
+  
+    .info-container {
+        margin-bottom: 50px;
+    }
+  }
+  
