@@ -1,8 +1,14 @@
 .control-panel {
-    margin: 10px 0;
+    margin: 10px;
     margin-bottom: 75px;
-    font-size: 0.85em;
-    color: #e0e0e0;
+    font-size: 15px;
+    font-weight: 550;
+    letter-spacing: 2px;
+    color: #b7b7b7b1;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 10px rgba(95, 95, 95, 0.5);
+    padding: 30px 50px;
+    border-radius: 25px; 
     text-align: center;
     overflow-y: auto; 
     -webkit-overflow-scrolling: touch;
@@ -11,7 +17,7 @@
 .control-panel button {
     padding: 10px 30px;
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 1.1em;
     font-weight: bold;
     letter-spacing: 3px;
@@ -38,21 +44,21 @@ input[type="range"] {
 }
 
 .slider {
-    margin-top: 50px;
-    margin-bottom: 5px;
+    margin-top: 55px;
+    margin-bottom: 10px;
     height: 5px;
     cursor: pointer;
 }
 
 .slider-metric {
-    font-size: 11px;
-    padding: 0 5px;
+    font-size: 12px;
+    padding: 0 10px;
 }
 
 @media only screen and (max-width: 768px) {
   
     .control-panel {
-        margin-bottom: 50px;
+        margin-bottom: 75px;
     }
   }
   

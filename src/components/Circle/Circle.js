@@ -4,7 +4,7 @@ import './Circle.css';
 const Circle = ({ color, onClick, active }) => {
     const circleStyle = {
         backgroundColor: color,
-        opacity: active ? 1 : 0.2,
+        opacity: active ? 1 : 0.25,
         transform: active ? 'scale(1.1)' : 'scale(1)',
     };
 
