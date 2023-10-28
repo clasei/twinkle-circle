@@ -1,24 +1,27 @@
 .info-container {
+    font-size: 15px;
     font-weight: 550;
-    line-height: 1.5em;
+    line-height: 1.6em;
     color: #e0e0e0;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 50px;
-    margin-bottom: 75px;
-    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.2);
     box-shadow: 0 3px 10px rgba(95, 95, 95, 0.5);
+    padding: 50px;
+    border-radius: 25px;
+    margin-top: 25px; 
+    margin-bottom: 75px; 
 }
 
 .info-container h2 {
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    margin-top: 25px;
     color: #e0e0e0;
 }
 
 .info-container p {
-    font-size: 0.8em;
+    font-size: 1em;
     margin: 15px 0;
 }
 
@@ -29,9 +32,9 @@
 
 .scroll-to-top-button {
     padding: 10px 30px;
-    margin-top: 50px;
-    margin-bottom: 5px;
-    font-size: 0.8em;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
     font-weight: bold;
     letter-spacing: 3px;
     cursor: pointer;
@@ -56,8 +59,8 @@
   
     .info-container {
         padding: 25px;
-        margin: 15px;
-        margin-bottom: 50px;
+        margin: 20px;
+        margin-bottom: 70px;
     }
   }
   

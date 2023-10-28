@@ -41,8 +41,13 @@
   position: relative;
 }
 
-.Info {
+.CircleContainer, .ControlPanel {
   z-index: 3;
+  position: relative;
+}
+
+.Info {
+  z-index: 4;
   width: auto;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
