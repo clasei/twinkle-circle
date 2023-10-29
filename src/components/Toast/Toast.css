@@ -19,6 +19,5 @@
 }
 
 .toast:hover {
-    transform: scale(0.9) translateX(-25%) translateY(25%);
     background-color: #616161;
 }
