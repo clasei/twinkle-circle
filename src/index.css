@@ -9,7 +9,7 @@ body, html {
   overflow: auto;
   opacity: 0.9;
   position: relative;
-  background-image: linear-gradient(0deg, #070707, #101010, #1c1c1c);
+  background-image: linear-gradient(0deg, #070707, #0c0c0c, #1c1c1c);
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Oxygen',
     'Ubuntu', 'Fira Sans', 'Helvetica Neue',
     sans-serif;

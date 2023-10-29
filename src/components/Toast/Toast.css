@@ -1,0 +1,24 @@
+.toast {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #eeeeeeb1;
+    color: #333333c0;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 650;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    z-index: 5;
+}
+
+.toast.show {
+    display: block;
+}
+
+.toast:hover {
+    transform: scale(0.9) translateX(-25%) translateY(25%);
+    background-color: #616161;
+}
