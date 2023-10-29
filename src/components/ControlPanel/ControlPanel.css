@@ -22,8 +22,8 @@
     font-weight: bold;
     letter-spacing: 3px;
     cursor: pointer;
-    border: 1px solid #555;
-    background-color: #333;
+    border: 1px solid #616161;
+    background-color: #333333c0;
     color: #eeeeeeb1;
     border-radius: 5px;
     transition: all 0.3s;
@@ -31,12 +31,12 @@
 
 .control-panel button:hover {
     transform: scale(0.9);
-    background-color: #555;
+    background-color: #616161;
 }
 
 .control-panel button:active {
     transform: scale(0.9);
-    background-color: #555;
+    background-color: #616161;
 }
 
 input[type="range"] {
