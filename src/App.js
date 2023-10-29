@@ -38,13 +38,13 @@ function App() {
 
   const playSequence = async (sequence) => {
     setActiveCircle("");
-    await sleep(850);
+    await sleep(800);
 
     for (let color of sequence) {
       setActiveCircle(color);
       await sleep(gameSpeed);
       setActiveCircle("");
-      await sleep(250);
+      await sleep(200);
     }
   };
 
