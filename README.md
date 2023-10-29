@@ -3,7 +3,7 @@
 
 
 ### Have Fun → [twinkleCircle](https://clasei.github.io/twinkle-circle/)
-[<img src="./src/assets/twinkle-circle-screenshot-1.png" alt="twinkle-circle screenshot" width="500"/>](./src/assets/twinkle-circle-screenshot-1.png)
+<img src="https://github.com/clasei/twinkle-circle/assets/128303027/cf7fd7b4-fb25-4e73-8e0f-9ae7dd70532b" alt="twinkle-circle screenshot-v1.0.2" width="500"/>
 
 ---
 
