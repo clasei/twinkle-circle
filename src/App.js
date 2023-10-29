@@ -14,6 +14,7 @@ function App() {
   const [gameSpeed, setGameSpeed] = useState(500);
   const colors = ["pink", "blue", "green", "yellow"];
   const [activeCircle, setActiveCircle] = useState("");
+  const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
   const headerRef = useRef(null);
 
@@ -37,13 +38,13 @@ function App() {
 
   const playSequence = async (sequence) => {
     setActiveCircle("");
-    await new Promise(resolve => setTimeout(resolve, 850));
+    await sleep(850);
 
     for (let color of sequence) {
       setActiveCircle(color);
-      await new Promise(resolve => setTimeout(resolve, gameSpeed));
+      await sleep(gameSpeed);
       setActiveCircle("");
-      await new Promise(resolve => setTimeout(resolve, 250));
+      await sleep(250);
     }
   };
 
@@ -55,6 +56,7 @@ function App() {
 
     if (newPlayerSequence[newPlayerSequence.length - 1] !== gameSequence[newPlayerSequence.length - 1]) {
       setIsGameActive(false);
+      setActiveCircle("");
       alert("practice is the way, give it another go (:");
       return;
     }
@@ -84,9 +86,11 @@ function App() {
                 onCircleClick={handleCircleClick}
             />
             <ControlPanel onStart={startGame} gameSpeed={gameSpeed} onSpeedChange={handleSpeedChange} />
+            <Info headerRef={headerRef} />
+            <Footer />
           </div>
-          <Info headerRef={headerRef} />
-        <Footer />
+          
+        
     </div>
  );
 }
