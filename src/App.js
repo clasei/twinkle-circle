@@ -86,9 +86,11 @@ function App() {
                 onCircleClick={handleCircleClick}
             />
             <ControlPanel onStart={startGame} gameSpeed={gameSpeed} onSpeedChange={handleSpeedChange} />
+            <Info headerRef={headerRef} />
+            <Footer />
           </div>
-          <Info headerRef={headerRef} />
-        <Footer />
+          
+        
     </div>
  );
 }
