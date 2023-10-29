@@ -9,18 +9,23 @@ import Footer from './components/Footer/Footer';
 import Toast from './components/Toast/Toast';
 
 function App() {
+  // state variables for the game logic
   const [gameSequence, setGameSequence] = useState([]);
   const [playerSequence, setPlayerSequence] = useState([]);
   const [isGameActive, setIsGameActive] = useState(false);
   const [gameSpeed, setGameSpeed] = useState(500);
+
   const colors = ["pink", "blue", "green", "yellow"];
   const [activeCircle, setActiveCircle] = useState("");
+
+  // utility function to pause execution for specified duration
   const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
   const headerRef = useRef(null);
 
   const [toastMessage, setToastMessage] = useState("");
 
+  // generate a random color from the available colors array
   const generateRandomColor = () => {
     const randomIndex = Math.floor(Math.random() * colors.length);
     return colors[randomIndex];
@@ -30,6 +35,7 @@ function App() {
     setGameSpeed(event.target.value);
   };  
 
+  // function to initiate the game
   const startGame = () => {
     console.log("Game has started!");
     setIsGameActive(true);
@@ -39,6 +45,7 @@ function App() {
     playSequence([newColor]);
   };
 
+  // playback the generated sequence to the player
   const playSequence = async (sequence) => {
     setActiveCircle("");
     await sleep(800);
@@ -51,6 +58,7 @@ function App() {
     }
   };
 
+  // handle circle clicks and game logic
   const handleCircleClick = (color) => {
     if (!isGameActive) return;
 
@@ -74,10 +82,12 @@ function App() {
     }
   };
 
+  // initialize the particles background on component mount
   useEffect(() => {
       window.particlesJS('particles-js', particlesConfig);
   }, []);
 
+  // handle the display duration of toast messages
   useEffect(() => {
       if (toastMessage) {
         const timer = setTimeout(() => {
@@ -104,8 +114,6 @@ function App() {
             <Footer />
             {toastMessage && <Toast message={toastMessage} />}
           </div>
-          
-        
     </div>
  );
 }
