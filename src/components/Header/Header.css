@@ -20,4 +20,8 @@
         margin-top: 75px;
         margin-bottom: 25px;
     }
+
+    .title {
+        font-size: 2.5em;
+    }
   }
