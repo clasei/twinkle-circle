@@ -36,12 +36,12 @@
   z-index: -2;
 }
 
-.CircleContainer, .ControlPanel {
+.CircleContainer {
   z-index: 2;
   position: relative;
 }
 
-.CircleContainer, .ControlPanel {
+.ControlPanel {
   z-index: 3;
   position: relative;
 }
@@ -50,5 +50,4 @@
   z-index: 4;
   width: auto;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
 }
