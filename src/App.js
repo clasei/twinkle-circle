@@ -6,6 +6,7 @@ import CircleContainer from './components/CircleContainer/CircleContainer';
 import ControlPanel from './components/ControlPanel/ControlPanel';
 import Info from './components/Info/Info';
 import Footer from './components/Footer/Footer';
+import Toast from './components/Toast/Toast';
 
 function App() {
   const [gameSequence, setGameSequence] = useState([]);
@@ -17,6 +18,8 @@ function App() {
   const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
   const headerRef = useRef(null);
+
+  const [toastMessage, setToastMessage] = useState("");
 
   const generateRandomColor = () => {
     const randomIndex = Math.floor(Math.random() * colors.length);
@@ -57,7 +60,7 @@ function App() {
     if (newPlayerSequence[newPlayerSequence.length - 1] !== gameSequence[newPlayerSequence.length - 1]) {
       setIsGameActive(false);
       setActiveCircle("");
-      alert("practice is the way, give it another go (:");
+      setToastMessage("practice is the way, give it another go");
       return;
     }
 
@@ -75,6 +78,17 @@ function App() {
       window.particlesJS('particles-js', particlesConfig);
   }, []);
 
+  useEffect(() => {
+      if (toastMessage) {
+        const timer = setTimeout(() => {
+            setToastMessage("");
+        }, 5000);
+
+        return () => clearTimeout(timer);
+      }
+}, [toastMessage]);
+
+
   return (
     <div className="App">
         <div id="particles-js"></div>
@@ -88,6 +102,7 @@ function App() {
             <ControlPanel onStart={startGame} gameSpeed={gameSpeed} onSpeedChange={handleSpeedChange} />
             <Info headerRef={headerRef} />
             <Footer />
+            {toastMessage && <Toast message={toastMessage} />}
           </div>
           
         
