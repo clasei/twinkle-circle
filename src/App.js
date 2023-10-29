@@ -56,6 +56,7 @@ function App() {
 
     if (newPlayerSequence[newPlayerSequence.length - 1] !== gameSequence[newPlayerSequence.length - 1]) {
       setIsGameActive(false);
+      setActiveCircle("");
       alert("practice is the way, give it another go (:");
       return;
     }
