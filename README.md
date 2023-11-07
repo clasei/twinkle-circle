@@ -37,8 +37,6 @@ The heart of the twinkle-circle lies within the App.js file, a fundamental compo
 - **Circles**: changes can be made in `Circle.js`
 - **Slider**: changes can be made in `ControlPanel.js` 
 
-**Create React App** — this project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
-
 ---
 
 ### License
