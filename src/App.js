@@ -112,6 +112,7 @@ function App() {
             />
             <ControlPanel onStart={startGame} gameSpeed={gameSpeed} onSpeedChange={handleSpeedChange} />
             <Info headerRef={headerRef} />
+            <CodeLink />
             <Footer />
             {toastMessage && <Toast message={toastMessage} />}
           </div>
