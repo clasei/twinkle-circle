@@ -7,6 +7,7 @@ import ControlPanel from './components/ControlPanel/ControlPanel';
 import Info from './components/Info/Info';
 import Footer from './components/Footer/Footer';
 import Toast from './components/Toast/Toast';
+import CodeLink from './components/CodeLink/CodeLink';
 
 function App() {
   // state variables for the game logic
@@ -111,6 +112,7 @@ function App() {
             />
             <ControlPanel onStart={startGame} gameSpeed={gameSpeed} onSpeedChange={handleSpeedChange} />
             <Info headerRef={headerRef} />
+            <CodeLink />
             <Footer />
             {toastMessage && <Toast message={toastMessage} />}
           </div>
