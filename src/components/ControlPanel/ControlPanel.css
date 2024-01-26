@@ -48,10 +48,7 @@ input[type="range"] {
     margin-bottom: 10px;
     height: 5px;
     cursor: pointer;
-}
-
-.slider {
-    /* This flips the slider */
+    /* this flips the slider */
     direction: rtl;
 }
 
