@@ -22,7 +22,6 @@ const ControlPanel = ({ onStart, gameSpeed, onSpeedChange }) => {
       />
       <span> +</span>
 
-      <span className="slider-metric">{gameSpeed}ms</span>
       <p className="speed-adaptation">adapt the speed</p>
     </div>
   );
