@@ -50,9 +50,16 @@ input[type="range"] {
     cursor: pointer;
 }
 
-.slider-metric {
-    font-size: 12px;
-    padding: 0 10px;
+.slider {
+    /* This flips the slider */
+    direction: rtl;
+}
+
+.slider-control {
+    font-size: 19px;
+    font-weight: 800;
+    padding: 5px;
+    color: #f7f7f7b1;
 }
 
 @media only screen and (max-width: 768px) {

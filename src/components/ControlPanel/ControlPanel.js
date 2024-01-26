@@ -10,7 +10,8 @@ const ControlPanel = ({ onStart, gameSpeed, onSpeedChange }) => {
       
       <p className="instruction">watch & repeat — that's it</p>
      
-      <span>- </span>
+      <span className="slider-control">— </span>
+
       <input className="slider"
           type="range"
           min="100"
@@ -20,7 +21,7 @@ const ControlPanel = ({ onStart, gameSpeed, onSpeedChange }) => {
           id="speedslider"
           aria-label="Speed Control"
       />
-      <span> +</span>
+      <span className="slider-control"> +</span>
 
       <p className="speed-adaptation">adapt the speed</p>
     </div>
